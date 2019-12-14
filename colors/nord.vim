@@ -241,6 +241,11 @@ if g:nord_uniform_status_lines == 0
   call s:hi("StatusLineNC", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
   call s:hi("StatusLineTerm", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "NONE", "")
   call s:hi("StatusLineTermNC", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
+elseif g:nord_uniform_status_lines == -1
+  call s:hi("StatusLine",       s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
+  call s:hi("StatusLineNC",     s:nord4_gui, "NONE", "NONE", s:nord1_term, "NONE", "")
+  call s:hi("StatusLineTerm",   s:nord8_gui, s:nord1_gui, s:nord8_term, s:nord3_term, "NONE", "")
+  call s:hi("StatusLineTermNC", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
 else
   call s:hi("StatusLine", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "NONE", "")
   call s:hi("StatusLineNC", s:nord4_gui, s:nord3_gui, "NONE", s:nord3_term, "NONE", "")
